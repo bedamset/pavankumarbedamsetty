@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="portfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@300;400;500;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Background Ambient Glow Canvas -->
+    <!-- Ambient Glow Canvas -->
     <div class="ambient-canvas">
         <div class="glow-orb orb-blue"></div>
         <div class="glow-orb orb-purple"></div>
@@ -23,28 +23,40 @@
         <div class="nav-container">
             <a href="#" class="brand-logo">PKB<span>.</span></a>
             <div class="nav-links">
-                <a href="#narrative">01 // Brief</a>
-                <a href="#capabilities">02 // Core</a>
-                <a href="#execution">03 // Track Record</a>
-                <a href="#credentials">04 // Pedigree</a>
-                <a href="#engagements">05 // Solutions</a>
-                <a href="#connection">06 // Contact</a>
+                <a href="#narrative">01 // BRIEF</a>
+                <a href="#capabilities">02 // CORE</a>
+                <a href="#execution">03 // TRACK RECORD</a>
+                <a href="#credentials">04 // PEDIGREE</a>
+                <a href="#engagements">05 // SOLUTIONS</a>
+                <a href="#connection">06 // CONTACT</a>
             </div>
-            <button type="button" class="nav-bot-btn" onclick="openBotModal()">
-                <span class="bot-dot"></span> AI Agent
+            <button type="button" id="navBotBtn" class="nav-bot-btn">
+                <span class="bot-dot"></span> AI AGENT
             </button>
         </div>
     </header>
 
-    <!-- Hero Header & Interactive Tile Hub -->
+    <!-- Hero Header with Profile Image Beside Name -->
     <section class="hero-section">
-        <div class="hero-badge">Autonomous Leadership & Engineering Rigor</div>
-        <h1 class="hero-title">
-            PAVAN KUMAR <span class="gradient-text">BEDAMSETTY</span>
-        </h1>
-        <p class="hero-statement">
-            Civil Engineer | BIM & Net Zero Architect | Lean Operations Specialist
-        </p>
+        <div class="hero-layout">
+            <div class="hero-text-block">
+                <div class="hero-badge">AUTONOMOUS LEADERSHIP & ENGINEERING RIGOR</div>
+                <h1 class="hero-title">
+                    PAVAN KUMAR <br><span class="gradient-text">BEDAMSETTY</span>
+                </h1>
+                <p class="hero-statement">
+                    Civil Engineer | BIM & Net Zero Architect | Lean Operations Specialist
+                </p>
+            </div>
+
+            <!-- Custom Cut Frame Profile Image -->
+            <div class="profile-frame-wrap">
+                <div class="profile-glow-ring"></div>
+                <div class="profile-cut-frame">
+                    <img src="Images/titleimage.jpg" alt="Pavan Kumar Bedamsetty" class="profile-img">
+                </div>
+            </div>
+        </div>
 
         <!-- Command Dashboard / Tile Grid -->
         <div class="tile-grid-container">
@@ -52,60 +64,60 @@
                 <a href="#narrative" class="tile-box">
                     <span class="tile-index">01</span>
                     <span class="tile-tag">01 // Narrative</span>
-                    <h3>Executive Brief</h3>
+                    <h3>EXECUTIVE BRIEF</h3>
                     <p>Core ethos & unfiltered value</p>
                 </a>
                 <a href="#capabilities" class="tile-box">
                     <span class="tile-index">02</span>
                     <span class="tile-tag">02 // Capabilities</span>
-                    <h3>Core Competencies</h3>
+                    <h3>CORE COMPETENCIES</h3>
                     <p>5 pillars of execution</p>
                 </a>
                 <a href="#execution" class="tile-box">
                     <span class="tile-index">03</span>
                     <span class="tile-tag">03 // Execution</span>
-                    <h3>Operational Track Record</h3>
+                    <h3>OPERATIONAL TRACK RECORD</h3>
                     <p>High-volume field delivery</p>
                 </a>
                 <a href="#credentials" class="tile-box">
                     <span class="tile-index">04</span>
                     <span class="tile-tag">04 // Credentials</span>
-                    <h3>Academic Pedigree</h3>
-                    <p>MSc distinction & certifications</p>
+                    <h3>ACADEMIC PEDIGREE</h3>
+                    <p>MSc distinction & credentials</p>
                 </a>
                 <a href="#engagements" class="tile-box">
                     <span class="tile-index">05</span>
                     <span class="tile-tag">05 // Engagements</span>
-                    <h3>Consulting & Solutions</h3>
+                    <h3>CONSULTING & SOLUTIONS</h3>
                     <p>7 specialized services</p>
                 </a>
                 <a href="#connection" class="tile-box">
                     <span class="tile-index">06</span>
                     <span class="tile-tag">06 // Connection</span>
-                    <h3>Direct Engagement</h3>
-                    <p>Initiate high-stakes dialogue</p>
+                    <h3>DIRECT ENGAGEMENT</h3>
+                    <p>Initiate dialogue</p>
                 </a>
-                <div class="tile-box tile-agent" onclick="openBotModal()">
+                <div id="tileBotBtn" class="tile-box tile-agent">
                     <span class="tile-index">07</span>
                     <span class="tile-tag">07 // Neural Agent</span>
-                    <h3>AI Knowledge Agent</h3>
+                    <h3>AI KNOWLEDGE AGENT</h3>
                     <p>Instant query & message relay</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Main Content Container -->
+    <!-- Main Content -->
     <main class="content-wrapper">
 
         <!-- 01 // Narrative -->
         <section id="narrative" class="data-section">
             <div class="section-badge">01 // NARRATIVE</div>
-            <h2 class="section-title">Executive Brief</h2>
+            <h2 class="section-title">EXECUTIVE BRIEF</h2>
             <div class="glass-panel manifesto-card">
                 <h3 class="manifesto-title">A Note on Value vs. Checklists <span class="tag-accent">(To the Transactional Viewers)</span></h3>
                 <p>If your hiring model relies on a 6-second glance, you never truly cared about the depth of the role in the first place. If that is your metric, save us both the time and move along—I respect everyone's time too much for low-effort recruitment. But if your goal is to acquire a high-leverage asset who brings fresh creative strategy, technical precision, and relentless commitment to every single engagement—read on.</p>
-                <p>I am <strong>Pavan Kumar Bedamsetty</strong>. For me, acquiring mastery isn't an academic checklist; it is an obsession. While I hold top-tier credentials (graduating First Class with Distinction), I realized early on that formal education is often just a business—the real differentiator is the relentless ability to absorb skills, deconstruct complex systems, and deliver tangible results. Whether a challenge requires mastering ground-level operational mechanics or high-order engineering and data modeling, my capability to grasp, adapt, and execute is immediate.</p>
+                <p>I am <strong>Pavan Kumar Bedamsetty</strong>. For me, acquiring mastery isn't an academic checklist; it is an obsession. While I hold top-tier credentials, I realized early on that formal education is often just a business—the real differentiator is the relentless ability to absorb skills, deconstruct complex systems, and deliver tangible results. Whether a challenge requires mastering ground-level operational mechanics or high-order engineering and data modeling, my capability to grasp, adapt, and execute is immediate.</p>
                 <p>I don’t just work within systems; I dissect how they run, where money is made, and where efficiency is lost. I turn observed patterns and industry trends into strategic, high-yield assets for the organizations I build with. I actively seek dynamic, high-impact engagements that demand intellectual autonomy, continuous variety, significant financial growth, and the freedom to plan, innovate, and deliver without micromanagement.</p>
             </div>
         </section>
@@ -113,33 +125,47 @@
         <!-- 02 // Capabilities -->
         <section id="capabilities" class="data-section">
             <div class="section-badge">02 // CAPABILITIES</div>
-            <h2 class="section-title">Core Competencies</h2>
+            <h2 class="section-title">CORE COMPETENCIES</h2>
             <div class="pillars-grid">
                 <div class="glass-panel pillar-box">
-                    <div class="pillar-num">01</div>
+                    <div class="pillar-top-row">
+                        <span class="pillar-tag">PILLAR 01</span>
+                    </div>
                     <h3>Autonomous Leadership vs. Static Management</h3>
                     <p>Management follows rules; leadership redefines outcomes. Traditional supervision often enforces redundant protocols simply because "that’s how it has always been done." Every true leader can manage, but very few managers know how to lead. I lead by nature, discipline, and practical circumstance—empowering teams to cut through bureaucratic friction, take ownership, and focus purely on execution and impact.</p>
                 </div>
+
                 <div class="glass-panel pillar-box">
-                    <div class="pillar-num">02</div>
+                    <div class="pillar-top-row">
+                        <span class="pillar-tag">PILLAR 02</span>
+                    </div>
                     <h3>Operational Efficiency & Waste Elimination</h3>
                     <p>Most teams operate well below their potential, weighed down by bloated processes and wasted motion. High performance comes from stripping away non-value-adding steps, optimizing time utilization, and introducing creative operational workflows. Having worked directly on operational floors, I drive systems that outpace conventional output by prioritizing speed, resource preservation, and lean execution.</p>
                 </div>
+
                 <div class="glass-panel pillar-box">
-                    <div class="pillar-num">03</div>
+                    <div class="pillar-top-row">
+                        <span class="pillar-tag">PILLAR 03</span>
+                    </div>
                     <h3>Rapid Technical Absorption & Digital Adaptability</h3>
                     <p>In an era of continuous technological obsolescence, the single competitive advantage is learning speed. Give me the problem, and I will solve it. If the toolchain is unfamiliar, I master it immediately and deliver the result—no excuses.</p>
                     <div class="tool-tags">
-                        <span>Revit</span><span>AutoCAD</span><span>STAAD</span><span>QGIS</span><span>ArcGIS Pro</span><span>Python</span><span>JavaScript</span><span>HTML5/CSS3</span><span>IBM SPSS</span><span>Adobe Suite</span><span>OS/Firmware/OEM</span>
+                        <span>Revit</span><span>AutoCAD</span><span>STAAD</span><span>QGIS</span><span>ArcGIS Pro</span><span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>IBM SPSS</span><span>Adobe Suite</span><span>OS/Firmware/OEM</span>
                     </div>
                 </div>
+
                 <div class="glass-panel pillar-box">
-                    <div class="pillar-num">04</div>
+                    <div class="pillar-top-row">
+                        <span class="pillar-tag">PILLAR 04</span>
+                    </div>
                     <h3>Commercial Acumen & Fiscal Intelligence</h3>
                     <p>Technical skill without financial awareness is incomplete. The real value of an asset lies in understanding cash flow dynamics, identifying profit drivers, mitigating operational liabilities, and recognizing when to scale, hold, or cut investments. I analyze projects through a commercial lens to ensure technical decisions support profitability, ROI, and long-term organizational value.</p>
                 </div>
+
                 <div class="glass-panel pillar-box full-width">
-                    <div class="pillar-num">05</div>
+                    <div class="pillar-top-row">
+                        <span class="pillar-tag">PILLAR 05</span>
+                    </div>
                     <h3>High-Trust Stakeholder Stewardship & Human-Centric Culture</h3>
                     <p>A company is only as durable as the trust between its people, partners, and stakeholders. Indifference breeds disengagement. I operate on transparency, radical honesty, integrity, and strategic vision. When you protect, respect, and align with your stakeholders, you build the kind of buy-in and loyalty that no rigid management policy can enforce.</p>
                 </div>
@@ -149,7 +175,7 @@
         <!-- 03 // Execution -->
         <section id="execution" class="data-section">
             <div class="section-badge">03 // EXECUTION</div>
-            <h2 class="section-title">Operational Track Record</h2>
+            <h2 class="section-title">OPERATIONAL TRACK RECORD</h2>
             
             <div class="track-list">
                 <div class="glass-panel track-item">
@@ -158,13 +184,13 @@
                             <h3>Amazon UK Services Ltd</h3>
                             <div class="track-role">Fulfilment Operations & Process Leadership / 5S Proxy Lead</div>
                         </div>
-                        <span class="track-time">2023 – Present</span>
+                        <span class="track-time">Current Role</span>
                     </div>
-                    <p><strong>Operational Trajectory:</strong> Despite entering the network with an advanced Master’s degree, I chose to start at the foundational tier to deconstruct the ecosystem from the floor up. Through relentless consistency, high output, and demonstrated reliability, I progressed through internal operational tiers, earned promotions, and stepped into Lead and Process Guide responsibilities within 3 years.</p>
+                    <p><strong>Operational Trajectory:</strong> Despite entering the network with an advanced Master’s degree, I chose to start at the foundational tier to deconstruct the ecosystem from the floor up. Through continuous discipline and practical reliability, I progressed into floor leadership, process guidance, and operational safety oversight.</p>
                     <ul class="track-points">
-                        <li><strong>High-Throughput Output:</strong> Maintained 1,300+ UPH on automated/robotic sorters (consistently 20%+ above site target) via strict FIFO compliance.</li>
-                        <li><strong>Lean & 5S Auditing:</strong> Acted as 5S Proxy Lead, resolving 43+ monthly SIM tickets, eliminating waste motions, and auditing health, safety, and operational standards.</li>
-                        <li><strong>Team Instruction:</strong> Instructed and coached incoming associates across UIS and URS stations, driving quality metrics and minimizing order shortages.</li>
+                        <li><strong>High-Volume Throughput:</strong> Spearheaded robotic and sorter workflows with zero tolerance for backlog, enforcing strict FIFO compliance to minimize inventory dwell times.</li>
+                        <li><strong>Lean & 5S Floor Governance:</strong> Served as 5S Proxy Lead, resolving floor bottlenecks, streamlining physical work areas, eliminating redundant steps, and executing safety compliance audits.</li>
+                        <li><strong>Team Instruction:</strong> Instructed incoming operational associates across critical workstations, establishing site quality standards and eliminating order discrepancies.</li>
                     </ul>
                 </div>
 
@@ -174,12 +200,12 @@
                             <h3>Coventry University</h3>
                             <div class="track-role">BIM & Project Management Practicum</div>
                         </div>
-                        <span class="track-time">2022 – 2023</span>
+                        <span class="track-time">Practicum</span>
                     </div>
-                    <p><strong>Industry-Simulated Team Execution:</strong> Coordinated multidisciplinary engineering workflows designed to mirror modern corporate and construction delivery environments.</p>
+                    <p><strong>Industry-Simulated Collaborative Execution:</strong> Coordinated multidisciplinary engineering workflows designed to mirror modern corporate and construction delivery environments.</p>
                     <ul class="track-points">
-                        <li><strong>Multidisciplinary BIM Design:</strong> Coordinated 3D parametric modeling, clash detection, and digital workflows between architectural and structural domains.</li>
-                        <li><strong>Competitive Placement:</strong> Led cross-functional design and lifecycle costing simulations, ranking <strong>3rd out of 12+ teams</strong>.</li>
+                        <li><strong>Integrated 3D BIM Design:</strong> Managed architectural and structural BIM modeling, spatial clash detection, and digital data coordination.</li>
+                        <li><strong>Project Lifecycle Case Studies:</strong> Developed comprehensive lifecycle costings, risk matrices, and construction schedules under statutory building contracts.</li>
                     </ul>
                 </div>
 
@@ -191,11 +217,11 @@
                         </div>
                         <span class="track-time">Coventry, UK</span>
                     </div>
-                    <p><strong>Solo-Architected Big Data Project:</strong> Directed a complex environmental modeling project involving 8 team members. While structured as a collaborative effort, I independently conceptualized the research framework, formulated analytical methodologies, and executed the core spatial computations from end to end.</p>
+                    <p><strong>Solo-Architected Big Data Project:</strong> Directed an environmental modeling project within an assigned team structure, single-handedly formulating the analytical methodology, data scripts, and spatial analysis pipeline from inception to final delivery.</p>
                     <ul class="track-points">
-                        <li><strong>Satellite DEM & Remote Sensing:</strong> Processed decade-long Sentinel-2 and Landsat-8 datasets via QGIS, ArcGIS Pro, and Python (Rasterio/NumPy) to compute NDVI indices.</li>
-                        <li><strong>Predictive Analytics:</strong> Quantified deforestation vectors, 12–15% urban vegetation decline, and seasonal water table fluctuations.</li>
-                        <li><strong>Commercial Model:</strong> Built an ultra-low-cost, rapid data processing framework replacing expensive physical survey methods with high-precision remote intelligence.</li>
+                        <li><strong>Satellite DEM & Remote Sensing:</strong> Processed longitudinal satellite datasets via QGIS, ArcGIS Pro, and Python to compute NDVI vegetation health indices.</li>
+                        <li><strong>Predictive Analytics:</strong> Mapped urban expansion patterns, seasonal water table dynamics, and environmental degradation vectors.</li>
+                        <li><strong>Rapid Scalable Model:</strong> Formulated an ultra-efficient data methodology replacing manual field surveying with high-precision satellite telemetry.</li>
                     </ul>
                 </div>
 
@@ -205,12 +231,12 @@
                             <h3>Bespoke Technical & Digital Engagements</h3>
                             <div class="track-role">Freelance Systems & Technical Advisory</div>
                         </div>
-                        <span class="track-time">2020 – Present</span>
+                        <span class="track-time">Ongoing</span>
                     </div>
                     <ul class="track-points">
-                        <li><strong>Firmware & OS Configuration:</strong> Hardware triage, OEM unlocking, bootloader modifications, OS repair, and custom firmware flashing.</li>
-                        <li><strong>Data & Transcriptions:</strong> High-precision technical audio-video transcriptions and digital asset preparation.</li>
-                        <li><strong>Academic Advisory:</strong> Structuring rigorous empirical methodologies and quantitative evaluations for complex technical reports.</li>
+                        <li><strong>Firmware & OS Remediation:</strong> System hardware diagnostics, OEM unlocking, bootloader modifications, OS recovery, and custom firmware environments.</li>
+                        <li><strong>Technical Transcription:</strong> High-accuracy transcription of technical recordings, academic material preparation, and digital asset structuring.</li>
+                        <li><strong>Methodology Consulting:</strong> Formulating empirical research frameworks and quantitative data structures for technical evaluations.</li>
                     </ul>
                 </div>
             </div>
@@ -219,7 +245,7 @@
         <!-- 04 // Credentials -->
         <section id="credentials" class="data-section">
             <div class="section-badge">04 // CREDENTIALS</div>
-            <h2 class="section-title">Academic Pedigree</h2>
+            <h2 class="section-title">ACADEMIC PEDIGREE</h2>
 
             <div class="glass-panel manifesto-card" style="margin-bottom: 25px;">
                 <h3 class="manifesto-title">Philosophy: Knowledge Over Paper Metrics</h3>
@@ -230,21 +256,21 @@
                 <div class="glass-panel edu-card">
                     <div class="edu-degree">Master of Science (MSc)</div>
                     <h3>Construction Management & BIM</h3>
-                    <div class="edu-meta">Coventry University, United Kingdom | 2023 – 2024</div>
-                    <p class="edu-distinction">Awarded Distinction (73%)</p>
+                    <div class="edu-meta">Coventry University, United Kingdom</div>
+                    <p class="edu-distinction">Graduated with Distinction</p>
                     <ul class="edu-topics">
                         <li>Advanced Project & Program Management</li>
                         <li>Financial, Capital & Asset Management</li>
                         <li>Commercial Contract Law (JCT, NEC, CDM)</li>
                         <li>Organizational Theory & High-Performance Teams</li>
-                        <li>Thesis: Statistical modeling (IBM SPSS) on national-scale labor shortages in India.</li>
+                        <li>Empirical Research & Statistical Labor Analysis (IBM SPSS)</li>
                     </ul>
                 </div>
 
                 <div class="glass-panel edu-card">
                     <div class="edu-degree">Bachelor of Technology (B.Tech)</div>
                     <h3>Civil Engineering</h3>
-                    <div class="edu-meta">KITS, India | Graduated 2022</div>
+                    <div class="edu-meta">KITS, India</div>
                     <p class="edu-distinction">First Class with Distinction</p>
                     <ul class="edu-topics">
                         <li>Structural, Geotechnical & Environmental Engineering</li>
@@ -257,24 +283,24 @@
 
             <div class="cert-bar">
                 <div class="glass-panel cert-card">
-                    <span class="cert-year">2026</span>
-                    <h4>NEBOSH IGC</h4>
-                    <p>Occupational Health & Safety (Phoenix)</p>
+                    <span class="cert-year">NEBOSH</span>
+                    <h4>Occupational Health & Safety</h4>
+                    <p>Phoenix Health & Safety</p>
                 </div>
                 <div class="glass-panel cert-card">
-                    <span class="cert-year">2026</span>
+                    <span class="cert-year">DIPLOMA</span>
                     <h4>IT Support & Systems</h4>
                     <p>Pitman / Amazon Career Choice</p>
                 </div>
                 <div class="glass-panel cert-card">
-                    <span class="cert-year">2025</span>
-                    <h4>Advanced Web Dev</h4>
+                    <span class="cert-year">DIPLOMA</span>
+                    <h4>Advanced Web Development</h4>
                     <p>Pitman / Amazon Career Choice</p>
                 </div>
                 <div class="glass-panel cert-card">
-                    <span class="cert-year">2024</span>
+                    <span class="cert-year">DIPLOMA</span>
                     <h4>Human Resources</h4>
-                    <p>Pitman / Amazon (Graduated 95%)</p>
+                    <p>Pitman / Amazon Career Choice</p>
                 </div>
             </div>
         </section>
@@ -282,12 +308,12 @@
         <!-- 05 // Engagements -->
         <section id="engagements" class="data-section">
             <div class="section-badge">05 // ENGAGEMENTS</div>
-            <h2 class="section-title">Consulting & Solutions</h2>
+            <h2 class="section-title">CONSULTING & SOLUTIONS</h2>
             <div class="services-matrix">
                 <div class="glass-panel service-cell">
                     <div class="service-id">01</div>
                     <h3>Architectural & Spatial Engineering</h3>
-                    <p>2D detailed drafting, 3D parametric Revit modeling, structural sections, and ergonomic residential/commercial layouts.</p>
+                    <p>2D detailed drafting, 3D parametric Revit modeling, structural sections, and ergonomic residential and commercial layouts.</p>
                 </div>
                 <div class="glass-panel service-cell">
                     <div class="service-id">02</div>
@@ -325,22 +351,22 @@
         <!-- 06 // Connection -->
         <section id="connection" class="data-section">
             <div class="section-badge">06 // CONNECTION</div>
-            <h2 class="section-title">Direct Engagement</h2>
+            <h2 class="section-title">DIRECT ENGAGEMENT</h2>
             <div class="glass-panel contact-wrapper">
                 <div class="contact-left">
                     <h3>Initiate Dialogue</h3>
-                    <p>Open to high-impact engineering leadership roles, operational consulting, select freelance advisory contracts, and collaborative academic/PhD research initiatives. If you value execution, candor, and relentless delivery—let’s talk.</p>
+                    <p>Open to high-impact engineering leadership roles, operational consulting, select freelance advisory contracts, and collaborative academic research initiatives. If you value execution, candor, and relentless delivery—let’s talk.</p>
                     <div class="contact-details">
                         <div class="detail-row">
-                            <span class="detail-label">Email</span>
+                            <span class="detail-label">EMAIL</span>
                             <a href="mailto:pavanbedamsetty@gmail.com" class="detail-value">pavanbedamsetty@gmail.com</a>
                         </div>
                         <div class="detail-row">
-                            <span class="detail-label">Direct Line</span>
+                            <span class="detail-label">DIRECT LINE</span>
                             <a href="tel:+447767710809" class="detail-value">+44 7767 710809</a>
                         </div>
                         <div class="detail-row">
-                            <span class="detail-label">Location</span>
+                            <span class="detail-label">LOCATION</span>
                             <span class="detail-value">United Kingdom</span>
                         </div>
                     </div>
@@ -352,7 +378,7 @@
                         <input type="email" name="email" placeholder="Email Address" required>
                         <input type="text" name="subject" placeholder="Engagement Subject" required>
                         <textarea name="message" rows="4" placeholder="State requirements or inquiry..." required></textarea>
-                        <button type="submit" class="submit-btn">Transmit Message</button>
+                        <button type="submit" class="submit-btn">TRANSMIT MESSAGE</button>
                     </form>
                 </div>
             </div>
@@ -368,17 +394,17 @@
                     <span class="ai-status-orb"></span>
                     <span>NEURAL AGENT // PKB v2.6</span>
                 </div>
-                <button type="button" class="ai-close-btn" onclick="closeBotModal()">&times;</button>
+                <button type="button" id="aiCloseBtn" class="ai-close-btn">&times;</button>
             </div>
             <div id="aiChat" class="ai-chat-body">
                 <div class="ai-bubble incoming">
                     <strong>Neural Agent Initialized.</strong><br>
-                    Query any domain (BIM, Amazon, Degrees, 5S, Geospatial, Services) or send a direct dispatch to Pavan.
+                    Query any domain (e.g. BIM, Amazon, Credentials, 5S, Services) or type a message to transmit directly to Pavan.
                 </div>
             </div>
             <div class="ai-input-wrapper">
-                <input type="text" id="aiInput" placeholder="Type query (e.g. 'What BIM tools do you know?')..." onkeydown="handleAiKey(event)">
-                <button type="button" class="ai-send-btn" onclick="executeAiQuery()">Query</button>
+                <input type="text" id="aiInput" placeholder="Ask a question or enter keywords..." autocomplete="off">
+                <button type="button" id="aiSendBtn" class="ai-send-btn">QUERY</button>
             </div>
         </div>
     </div>
