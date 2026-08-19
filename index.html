@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <!-- Ambient Glow Canvas -->
+    <!-- Ambient Subtle Glow Background -->
     <div class="ambient-canvas">
         <div class="glow-orb orb-blue"></div>
         <div class="glow-orb orb-purple"></div>
@@ -22,17 +22,14 @@
     <header class="top-nav">
         <div class="nav-container">
             <a href="#" class="brand-logo">PKB<span>.</span></a>
-            <div class="nav-links">
+            <nav class="nav-links">
                 <a href="#narrative">01 // BRIEF</a>
                 <a href="#capabilities">02 // CORE</a>
                 <a href="#execution">03 // TRACK RECORD</a>
                 <a href="#credentials">04 // PEDIGREE</a>
                 <a href="#engagements">05 // SOLUTIONS</a>
-                <a href="#connection">06 // CONTACT</a>
-            </div>
-            <button type="button" id="navBotBtn" class="nav-bot-btn">
-                <span class="bot-dot"></span> AI AGENT
-            </button>
+                <a href="#connection" class="nav-cta">06 // CONTACT</a>
+            </nav>
         </div>
     </header>
 
@@ -49,16 +46,16 @@
                 </p>
             </div>
 
-            <!-- Custom Cut Frame Profile Image -->
+            <!-- Custom Cut-Frame Profile Image -->
             <div class="profile-frame-wrap">
                 <div class="profile-glow-ring"></div>
                 <div class="profile-cut-frame">
-                    <img src="Images/titleimage.jpg" alt="Pavan Kumar Bedamsetty" class="profile-img">
+                    <img src="Images/titleimage.jpg" onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/bedamset/pavankumarbedamsetty/main/Images/titleimage.jpg';" alt="Pavan Kumar Bedamsetty" class="profile-img">
                 </div>
             </div>
         </div>
 
-        <!-- Command Dashboard / Tile Grid -->
+        <!-- Command Dashboard / 6-Tile Grid -->
         <div class="tile-grid-container">
             <div class="tile-grid">
                 <a href="#narrative" class="tile-box">
@@ -97,12 +94,6 @@
                     <h3>DIRECT ENGAGEMENT</h3>
                     <p>Initiate dialogue</p>
                 </a>
-                <div id="tileBotBtn" class="tile-box tile-agent">
-                    <span class="tile-index">07</span>
-                    <span class="tile-tag">07 // Neural Agent</span>
-                    <h3>AI KNOWLEDGE AGENT</h3>
-                    <p>Instant query & message relay</p>
-                </div>
             </div>
         </div>
     </section>
@@ -385,29 +376,6 @@
         </section>
 
     </main>
-
-    <!-- 07 // Neural Agent (AI Bot Modal) -->
-    <div id="aiModal" class="ai-modal-overlay">
-        <div class="ai-modal-window">
-            <div class="ai-header">
-                <div class="ai-title">
-                    <span class="ai-status-orb"></span>
-                    <span>NEURAL AGENT // PKB v2.6</span>
-                </div>
-                <button type="button" id="aiCloseBtn" class="ai-close-btn">&times;</button>
-            </div>
-            <div id="aiChat" class="ai-chat-body">
-                <div class="ai-bubble incoming">
-                    <strong>Neural Agent Initialized.</strong><br>
-                    Query any domain (e.g. BIM, Amazon, Credentials, 5S, Services) or type a message to transmit directly to Pavan.
-                </div>
-            </div>
-            <div class="ai-input-wrapper">
-                <input type="text" id="aiInput" placeholder="Ask a question or enter keywords..." autocomplete="off">
-                <button type="button" id="aiSendBtn" class="ai-send-btn">QUERY</button>
-            </div>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="terminal-footer">
