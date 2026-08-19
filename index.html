@@ -1,350 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pavan Kumar Bedamsetty</title>
-<link rel="stylesheet" href="portfolio.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan Kumar Bedamsetty | Executive Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@300;400;500;700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-    <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#Profile">Profile Summary</a></li>
-        <li><a href="#Expertise">Areas of Expertise</a></li>
-        <li><a href="#WorkExperience">Work Experience</a></li>
-        <li><a href="#Future">Future Aspirations</a></li>
-        <li><a onclick="openForm()" class="contact-link">Contact</a></li>
-    </ul>
-</nav>
+    <!-- Background Ambient Glow Canvas -->
+    <div class="ambient-canvas">
+        <div class="glow-orb orb-blue"></div>
+        <div class="glow-orb orb-purple"></div>
+        <div class="glow-orb orb-pink"></div>
+    </div>
 
-<!-- Home Section -->
-<div id="Home" class="home-section">
-    <video autoplay muted loop id="bgVideo">
-        <source src="Images/background.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-    <div class="home-content">
-        <img src="Images/titleimage.jpg" alt="Profile Image" class="profile-img">
-        <h1 class="home-title">Pavan Kumar Bedamsetty</h1>
-        <p class="home-quote">
-            "Making the world more sustainable, innovative, and Net Zero.."
+    <!-- Top Sticky Navigation -->
+    <header class="top-nav">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">PKB<span>.</span></a>
+            <div class="nav-links">
+                <a href="#narrative">01 // Brief</a>
+                <a href="#capabilities">02 // Core</a>
+                <a href="#execution">03 // Track Record</a>
+                <a href="#credentials">04 // Pedigree</a>
+                <a href="#engagements">05 // Solutions</a>
+                <a href="#connection">06 // Contact</a>
+            </div>
+            <button type="button" class="nav-bot-btn" onclick="openBotModal()">
+                <span class="bot-dot"></span> AI Agent
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Header & Interactive Tile Hub -->
+    <section class="hero-section">
+        <div class="hero-badge">Autonomous Leadership & Engineering Rigor</div>
+        <h1 class="hero-title">
+            PAVAN KUMAR <span class="gradient-text">BEDAMSETTY</span>
+        </h1>
+        <p class="hero-statement">
+            Civil Engineer | BIM & Net Zero Architect | Lean Operations Specialist
         </p>
-    </div>
-</div>
 
-<!-- Profile Summary -->
-<div id="Profile" class="section fade-in">
-    <h2>Profile Summary</h2>
-    <p>
-        I was born and raised in an environment where construction was not just a profession but a way of life. Observing construction sites, witnessing meticulous planning, collaboration among teams, and the transformation of raw materials into functional structures fascinated me from an early age. This exposure instilled a deep interest in the built environment and inspired me to pursue a career that combines creativity, technical expertise, and leadership.
-    </p>
-    <p>
-        Driven by curiosity and an ever-learning mindset, I completed a B.Tech in Civil Engineering at Krishna Chaitanya Institute of Technology and Science, graduating First Class with Distinction. I gained a strong foundation in surveying, structural analysis, geotechnical engineering, environmental management, transportation engineering, construction materials, and project estimation. Hands-on experience in labs, field surveys, and construction projects honed my analytical and problem-solving abilities.
-    </p>
-    <p>
-        I pursued a Master’s in Construction Management with BIM at Coventry University, UK, graduating with Distinction. My master’s journey allowed me to dive deep into advanced construction management, sustainable design, BIM, energy-efficient construction, and integrated project delivery. My research project, “Addressing the Lack of Skilled Workers on Construction Sites in India,” applied mixed-methods research, thematic analysis, and statistical tools (SPSS, MS Forms) to investigate workforce gaps and propose practical solutions.
-    </p>
-    <p>
-        Alongside academics, I gained professional exposure at Amazon UK, strengthening leadership, mentoring, and operational skills by resolving workflow challenges, mentoring associates, and achieving operational excellence targets. These experiences shaped me into a versatile professional with a holistic understanding of construction, technology, workforce management, and business operations.
-    </p>
-    <p>
-        My profile reflects a unique blend of construction expertise, BIM and sustainability knowledge, workforce and HR insight, logistics leadership, and advanced web development skills, equipping me to contribute to complex, interdisciplinary projects integrating technology, management, and sustainability.
-    </p>
-</div>
-
-<!-- Areas of Expertise -->
-<div id="Expertise" class="section fade-in">
-    <h2>Areas of Expertise</h2>
-
-    <!-- Construction Management -->
-    <div class="expertise-block">
-        <h3>1. Construction Management</h3>
-        <p>With a solid foundation in construction engineering and management, I have cultivated comprehensive skills required for planning, supervising, and delivering complex construction projects.</p>
-        <strong>Skills & Competencies:</strong>
-        <ul>
-            <li>Project Planning & Scheduling (MS Project, Primavera)</li>
-            <li>Surveying & Field Analysis</li>
-            <li>Resource & Cost Management</li>
-            <li>Health, Safety, and Compliance Oversight</li>
-            <li>Risk Assessment & Quality Assurance</li>
-            <li>Team Leadership & Mentoring</li>
-        </ul>
-        <strong>Certifications & Qualifications:</strong>
-        <ul>
-            <li>CSCS Managers & Professionals Card (UK)</li>
-            <li>Health & Safety Compliance Certification</li>
-            <li>Amazon Career Choice Leadership Modules</li>
-        </ul>
-        <strong>Software Skills:</strong>
-        <ul>
-            <li>AutoCAD, Revit, Excel, GIS Tools, MS Project</li>
-        </ul>
-        <strong>Codes & Standards Knowledge:</strong>
-        <ul>
-            <li>UK: JCT, NEC, CDM Regulations, Health & Safety</li>
-            <li>India: IS Codes, National Building Code, Environmental & Safety Regulations</li>
-        </ul>
-        <strong>Key Achievements:</strong>
-        <ul>
-            <li>Research on skilled labour shortages in India with quantitative & qualitative analysis</li>
-            <li>Developed workforce training and productivity improvement strategies</li>
-            <li>Supervised student projects and BIM-integrated designs</li>
-        </ul>
-    </div>
-
-    <!-- BIM & Sustainable Construction -->
-    <div class="expertise-block">
-        <h3>2. Building Information Modelling (BIM) & Sustainable Construction</h3>
-        <p>Expertise in 3D design, sustainable construction, energy analysis, and Net Zero design principles.</p>
-        <strong>Skills & Certifications:</strong>
-        <ul>
-            <li>BIM Foundation & Advanced Modules</li>
-            <li>Sustainability & Net Zero Construction Practices</li>
-            <li>Advanced Revit, Solibri, BIM 360</li>
-        </ul>
-        <strong>Software Skills:</strong>
-        <ul>
-            <li>Revit, Navisworks, Solibri, Autodesk Insight, BIM 360</li>
-        </ul>
-        <strong>Achievements:</strong>
-        <ul>
-            <li>Led BIM-integrated security & infrastructure design, ranked 3rd/12 teams at Coventry University</li>
-            <li>Applied energy efficiency & Net Zero strategies in project simulations</li>
-            <li>Conducted lifecycle analysis for sustainability, performance, and cost optimization</li>
-        </ul>
-    </div>
-
-    <!-- Logistics & Operations -->
-    <div class="expertise-block">
-        <h3>3. Logistics & Operations Management</h3>
-        <p>Expertise in leadership, operational planning, process improvement, and KPI analysis.</p>
-        <ul>
-            <li>Leadership & People Management</li>
-            <li>Operational Planning & Workflow Optimization</li>
-            <li>Process Improvement (Lean, Kanban, Kaizen)</li>
-            <li>Performance Metrics & KPI Analysis</li>
-            <li>Safety, Compliance, & Risk Management</li>
-        </ul>
-        <strong>Certifications & Training:</strong>
-        <ul>
-            <li>Amazon Career Choice Leadership & Mentoring</li>
-            <li>Continuous Process Improvement Certifications</li>
-        </ul>
-        <strong>Experience & Achievements:</strong>
-        <ul>
-            <li>5S Proxy Lead at Amazon UK: resolved 43+ SIM tickets/month</li>
-            <li>Maintained 1,300+ UPH on robotic sorters, 20% above target</li>
-            <li>Mentored and coached new associates, improving efficiency and morale</li>
-            <li>Conducted operational audits ensuring health, safety, and quality compliance</li>
-        </ul>
-    </div>
-
-    <!-- HR & Talent Management -->
-    <div class="expertise-block">
-        <h3>4. Human Resources & Talent Management</h3>
-        <ul>
-            <li>Strategic Recruitment & Talent Acquisition</li>
-            <li>Performance Management & Employee Engagement</li>
-            <li>Mentorship, Coaching, Leadership Development</li>
-            <li>HR Analytics & Workforce Planning</li>
-        </ul>
-        <strong>Certifications & Training:</strong>
-        <ul>
-            <li>Amazon HR Assistant Diploma</li>
-            <li>CMI Level 7 Leadership & People Practice</li>
-            <li>Effective Business Communication Certifications</li>
-        </ul>
-        <strong>Experience & Achievements:</strong>
-        <ul>
-            <li>Designed strategic HR frameworks to improve recruitment, onboarding, and retention</li>
-            <li>Analyzed workforce disengagement in logistics (“pay-and-pass-the-day” culture)</li>
-            <li>Recommended leadership, performance management, and mentoring interventions</li>
-        </ul>
-    </div>
-
-    <!-- Advanced Web Development -->
-    <div class="expertise-block">
-        <h3>5. Advanced Web Development</h3>
-        <ul>
-            <li>Front-End Development, UI/UX Design, Responsive Web Development</li>
-            <li>HTML, CSS, JavaScript, Bootstrap</li>
-            <li>Wireframes to Functional Websites, Cross-Browser Compatibility</li>
-            <li>Version Control & Project Management</li>
-        </ul>
-        <strong>Modules & Training:</strong>
-        <ul>
-            <li>Computer & Technology Basics</li>
-            <li>Software Development Overview</li>
-            <li>HTML, CSS, Bootstrap, JavaScript</li>
-            <li>Managing Software Development Projects</li>
-        </ul>
-        <strong>Career Applications:</strong>
-        <ul>
-            <li>Front-End Developer, Web Developer, UI/UX Designer, JavaScript Developer</li>
-        </ul>
-    </div>
-</div>
-
-<!-- Work Experience -->
-<div id="WorkExperience" class="section fade-in">
-    <h2>Work Experience</h2>
-
-    <h3>Amazon UK Services Ltd – FC Associate (Sep 2023 – Present)</h3>
-    <ul>
-        <li>Assists lead in 5s operational audits, daily workflow, supoorting associates and giving clear instrutions promoting sites saftey standards and implemting lean and kanban principles for higher opertainal efficiency</li>
-        <li>Achieved 1,300+ UPH, 20% above target consistently following FIFO procedures resluting in achieving daily targets and reducing dwell times of Inventory</li>
-        <li>Mentored and coached new associates as an Instructor for UIS and URS contributing to Site Quality standards and reducing shortages/ overages of orders</li>
-        <li>Participated in Forum, Career Choice and numerous volunteering initiatives</li>
-        <li>Assists as a cover process guide for operational needs whenever required to follow shift handover protocols</li>
-        <li>Graduated from Amazon in Human Resource Assistancy with 95%</li>
-    </ul>
-
-    <h3>BIM Internship – Coventry University (May 2023 – Sep 2023)</h3>
-    <ul>
-        <li>Led BIM-integrated design of campus infrastructure</li>
-        <li>Ranked 3rd out of 12+ teams in innovative design project</li>
-        <li>Applied energy efficiency and sustainability metrics to project planning</li>
-    </ul>
-
-    <h3>Assistant Designer – CCTM Soft Tech (Jan 2021 – Dec 2022)</h3>
-    <ul>
-        <li>Delivered 4 interior design projects with high client satisfaction</li>
-        <li>Produced 3D models, visualizations, and material specifications</li>
-        <li>Managed client communications, project revisions, and schedules</li>
-    </ul>
-</div>
-
-<!-- Future Aspirations & Research Section -->
-<div id="Future" class="section fade-in">
-    <h2>Future Aspirations & Research <button onclick="toggleFuture()" class="expand-btn">Click to Expand</button></h2>
-    <div id="futureContent" style="display:none; margin-top: 20px;">
-
-        <!-- Future Aspirations -->
-        <div class="future-aspirations">
-            <p>With a strong foundation in Construction Management, BIM, NDVI-based environmental assessment, and workforce research, I aspire to pursue a PhD that deepens my exploration into sustainable development, Net Zero construction, and human resource efficiency within the built environment and logistics sectors.</p>
-            <p>Being practical, I recognise that research opportunities are not always easy to secure — therefore, I have consciously broadened my expertise beyond traditional construction disciplines. My goal is to create research that bridges industries, connecting sustainability, technology, NDVI and energy analysis, and human capital to drive long-term organisational and environmental improvement.</p>
-            <ul>
-                <li><strong>Sustainable Construction & Net Zero:</strong> Applying NDVI and energy analysis to design carbon-neutral buildings, optimise site planning, and integrate circular economy principles.</li>
-                <li><strong>Human Resource Dynamics in Global Logistics:</strong> Explore structural challenges in workforce hiring and retention, including the “pay-and-pass-the-day” mindset, and develop strategic recruitment, leadership, and performance management frameworks.</li>
-            </ul>
-            <p>Ultimately, my aspiration is to contribute to both academic knowledge and industry transformation — developing strategies that enhance performance while aligning with sustainable, human-centric growth.</p>
+        <!-- Command Dashboard / Tile Grid -->
+        <div class="tile-grid-container">
+            <div class="tile-grid">
+                <a href="#narrative" class="tile-box">
+                    <span class="tile-index">01</span>
+                    <span class="tile-tag">01 // Narrative</span>
+                    <h3>Executive Brief</h3>
+                    <p>Core ethos & unfiltered value</p>
+                </a>
+                <a href="#capabilities" class="tile-box">
+                    <span class="tile-index">02</span>
+                    <span class="tile-tag">02 // Capabilities</span>
+                    <h3>Core Competencies</h3>
+                    <p>5 pillars of execution</p>
+                </a>
+                <a href="#execution" class="tile-box">
+                    <span class="tile-index">03</span>
+                    <span class="tile-tag">03 // Execution</span>
+                    <h3>Operational Track Record</h3>
+                    <p>High-volume field delivery</p>
+                </a>
+                <a href="#credentials" class="tile-box">
+                    <span class="tile-index">04</span>
+                    <span class="tile-tag">04 // Credentials</span>
+                    <h3>Academic Pedigree</h3>
+                    <p>MSc distinction & certifications</p>
+                </a>
+                <a href="#engagements" class="tile-box">
+                    <span class="tile-index">05</span>
+                    <span class="tile-tag">05 // Engagements</span>
+                    <h3>Consulting & Solutions</h3>
+                    <p>7 specialized services</p>
+                </a>
+                <a href="#connection" class="tile-box">
+                    <span class="tile-index">06</span>
+                    <span class="tile-tag">06 // Connection</span>
+                    <h3>Direct Engagement</h3>
+                    <p>Initiate high-stakes dialogue</p>
+                </a>
+                <div class="tile-box tile-agent" onclick="openBotModal()">
+                    <span class="tile-index">07</span>
+                    <span class="tile-tag">07 // Neural Agent</span>
+                    <h3>AI Knowledge Agent</h3>
+                    <p>Instant query & message relay</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- MSc Research Project -->
-        <div class="research-project">
-            <h3>Research Project: Addressing the Skilled Labour Shortage in India's Construction Sector</h3>
-            <p><strong>Coventry University | MSc Construction Management with BIM | 2023</strong><br>
-            Supervisor: Mr. Sanjeev Lehil</p>
-            <p><em>“Addressing the lack of skilled workers on construction sites in India and proposing a strategic framework for bridging the divide.”</em></p>
+    <!-- Main Content Container -->
+    <main class="content-wrapper">
 
-            <h4>Overview</h4>
-            <p>This postgraduate research investigated the national-scale challenge of skilled labour shortages in India’s construction sector — an industry contributing over £22 billion annually to the GDP and employing millions. The study identified root causes, assessed impacts on project performance, and proposed an evidence-based strategic framework to bridge the skills gap.</p>
+        <!-- 01 // Narrative -->
+        <section id="narrative" class="data-section">
+            <div class="section-badge">01 // NARRATIVE</div>
+            <h2 class="section-title">Executive Brief</h2>
+            <div class="glass-panel manifesto-card">
+                <h3 class="manifesto-title">A Note on Value vs. Checklists <span class="tag-accent">(To the Transactional Viewers)</span></h3>
+                <p>If your hiring model relies on a 6-second glance, you never truly cared about the depth of the role in the first place. If that is your metric, save us both the time and move along—I respect everyone's time too much for low-effort recruitment. But if your goal is to acquire a high-leverage asset who brings fresh creative strategy, technical precision, and relentless commitment to every single engagement—read on.</p>
+                <p>I am <strong>Pavan Kumar Bedamsetty</strong>. For me, acquiring mastery isn't an academic checklist; it is an obsession. While I hold top-tier credentials (graduating First Class with Distinction), I realized early on that formal education is often just a business—the real differentiator is the relentless ability to absorb skills, deconstruct complex systems, and deliver tangible results. Whether a challenge requires mastering ground-level operational mechanics or high-order engineering and data modeling, my capability to grasp, adapt, and execute is immediate.</p>
+                <p>I don’t just work within systems; I dissect how they run, where money is made, and where efficiency is lost. I turn observed patterns and industry trends into strategic, high-yield assets for the organizations I build with. I actively seek dynamic, high-impact engagements that demand intellectual autonomy, continuous variety, significant financial growth, and the freedom to plan, innovate, and deliver without micromanagement.</p>
+            </div>
+        </section>
 
-            <h4>Methodology</h4>
-            <ul>
-                <li>Mixed-methods approach under a pragmatic research philosophy</li>
-                <li>Surveyed 85 construction professionals via Microsoft Forms</li>
-                <li>IBM SPSS statistical analysis to identify frequency patterns & correlations</li>
-                <li>Thematic analysis for qualitative insights into training, education, and technology adoption</li>
-                <li>Developed the original “Convergence Model” for methodological reliability and data integration</li>
-            </ul>
+        <!-- 02 // Capabilities -->
+        <section id="capabilities" class="data-section">
+            <div class="section-badge">02 // CAPABILITIES</div>
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="pillars-grid">
+                <div class="glass-panel pillar-box">
+                    <div class="pillar-num">01</div>
+                    <h3>Autonomous Leadership vs. Static Management</h3>
+                    <p>Management follows rules; leadership redefines outcomes. Traditional supervision often enforces redundant protocols simply because "that’s how it has always been done." Every true leader can manage, but very few managers know how to lead. I lead by nature, discipline, and practical circumstance—empowering teams to cut through bureaucratic friction, take ownership, and focus purely on execution and impact.</p>
+                </div>
+                <div class="glass-panel pillar-box">
+                    <div class="pillar-num">02</div>
+                    <h3>Operational Efficiency & Waste Elimination</h3>
+                    <p>Most teams operate well below their potential, weighed down by bloated processes and wasted motion. High performance comes from stripping away non-value-adding steps, optimizing time utilization, and introducing creative operational workflows. Having worked directly on operational floors, I drive systems that outpace conventional output by prioritizing speed, resource preservation, and lean execution.</p>
+                </div>
+                <div class="glass-panel pillar-box">
+                    <div class="pillar-num">03</div>
+                    <h3>Rapid Technical Absorption & Digital Adaptability</h3>
+                    <p>In an era of continuous technological obsolescence, the single competitive advantage is learning speed. Give me the problem, and I will solve it. If the toolchain is unfamiliar, I master it immediately and deliver the result—no excuses.</p>
+                    <div class="tool-tags">
+                        <span>Revit</span><span>AutoCAD</span><span>STAAD</span><span>QGIS</span><span>ArcGIS Pro</span><span>Python</span><span>JavaScript</span><span>HTML5/CSS3</span><span>IBM SPSS</span><span>Adobe Suite</span><span>OS/Firmware/OEM</span>
+                    </div>
+                </div>
+                <div class="glass-panel pillar-box">
+                    <div class="pillar-num">04</div>
+                    <h3>Commercial Acumen & Fiscal Intelligence</h3>
+                    <p>Technical skill without financial awareness is incomplete. The real value of an asset lies in understanding cash flow dynamics, identifying profit drivers, mitigating operational liabilities, and recognizing when to scale, hold, or cut investments. I analyze projects through a commercial lens to ensure technical decisions support profitability, ROI, and long-term organizational value.</p>
+                </div>
+                <div class="glass-panel pillar-box full-width">
+                    <div class="pillar-num">05</div>
+                    <h3>High-Trust Stakeholder Stewardship & Human-Centric Culture</h3>
+                    <p>A company is only as durable as the trust between its people, partners, and stakeholders. Indifference breeds disengagement. I operate on transparency, radical honesty, integrity, and strategic vision. When you protect, respect, and align with your stakeholders, you build the kind of buy-in and loyalty that no rigid management policy can enforce.</p>
+                </div>
+            </div>
+        </section>
 
-            <h4>Key Findings</h4>
-            <ul>
-                <li>85% of construction firms reported skilled worker shortages affecting productivity, cost, and safety</li>
-                <li>Training gaps, migration patterns, and limited adoption of digital tools (BIM, CSCS Cards) identified as primary causes</li>
-                <li>Correlation established between skill deficits and project quality decline</li>
-                <li>Proposed strategic workforce framework: continuous skill-assessment, industry-academia collaboration, youth apprenticeships, and technology-driven upskilling</li>
-            </ul>
+        <!-- 03 // Execution -->
+        <section id="execution" class="data-section">
+            <div class="section-badge">03 // EXECUTION</div>
+            <h2 class="section-title">Operational Track Record</h2>
+            
+            <div class="track-list">
+                <div class="glass-panel track-item">
+                    <div class="track-header">
+                        <div>
+                            <h3>Amazon UK Services Ltd</h3>
+                            <div class="track-role">Fulfilment Operations & Process Leadership / 5S Proxy Lead</div>
+                        </div>
+                        <span class="track-time">2023 – Present</span>
+                    </div>
+                    <p><strong>Operational Trajectory:</strong> Despite entering the network with an advanced Master’s degree, I chose to start at the foundational tier to deconstruct the ecosystem from the floor up. Through relentless consistency, high output, and demonstrated reliability, I progressed through internal operational tiers, earned promotions, and stepped into Lead and Process Guide responsibilities within 3 years.</p>
+                    <ul class="track-points">
+                        <li><strong>High-Throughput Output:</strong> Maintained 1,300+ UPH on automated/robotic sorters (consistently 20%+ above site target) via strict FIFO compliance.</li>
+                        <li><strong>Lean & 5S Auditing:</strong> Acted as 5S Proxy Lead, resolving 43+ monthly SIM tickets, eliminating waste motions, and auditing health, safety, and operational standards.</li>
+                        <li><strong>Team Instruction:</strong> Instructed and coached incoming associates across UIS and URS stations, driving quality metrics and minimizing order shortages.</li>
+                    </ul>
+                </div>
 
-            <h4>Results & Recognition</h4>
-            <ul>
-                <li>Earned Distinction (73%) for research quality and practical relevance</li>
-                <li>Framework considered as a model for training standardisation and workforce digitalisation in developing contexts</li>
-            </ul>
+                <div class="glass-panel track-item">
+                    <div class="track-header">
+                        <div>
+                            <h3>Coventry University</h3>
+                            <div class="track-role">BIM & Project Management Practicum</div>
+                        </div>
+                        <span class="track-time">2022 – 2023</span>
+                    </div>
+                    <p><strong>Industry-Simulated Team Execution:</strong> Coordinated multidisciplinary engineering workflows designed to mirror modern corporate and construction delivery environments.</p>
+                    <ul class="track-points">
+                        <li><strong>Multidisciplinary BIM Design:</strong> Coordinated 3D parametric modeling, clash detection, and digital workflows between architectural and structural domains.</li>
+                        <li><strong>Competitive Placement:</strong> Led cross-functional design and lifecycle costing simulations, ranking <strong>3rd out of 12+ teams</strong>.</li>
+                    </ul>
+                </div>
 
-            <h4>Skills & Tools Gained</h4>
-            <ul>
-                <li>Quantitative & qualitative research, data modelling (SPSS, MS Forms)</li>
-                <li>Policy & workforce analytics</li>
-                <li>BIM & digital construction tools</li>
-                <li>Technical report writing, strategic framework development, stakeholder collaboration</li>
-            </ul>
+                <div class="glass-panel track-item">
+                    <div class="track-header">
+                        <div>
+                            <h3>Geospatial Big Data Analytics & Remote Sensing</h3>
+                            <div class="track-role">Lead Geospatial Analyst & Environmental Modeler</div>
+                        </div>
+                        <span class="track-time">Coventry, UK</span>
+                    </div>
+                    <p><strong>Solo-Architected Big Data Project:</strong> Directed a complex environmental modeling project involving 8 team members. While structured as a collaborative effort, I independently conceptualized the research framework, formulated analytical methodologies, and executed the core spatial computations from end to end.</p>
+                    <ul class="track-points">
+                        <li><strong>Satellite DEM & Remote Sensing:</strong> Processed decade-long Sentinel-2 and Landsat-8 datasets via QGIS, ArcGIS Pro, and Python (Rasterio/NumPy) to compute NDVI indices.</li>
+                        <li><strong>Predictive Analytics:</strong> Quantified deforestation vectors, 12–15% urban vegetation decline, and seasonal water table fluctuations.</li>
+                        <li><strong>Commercial Model:</strong> Built an ultra-low-cost, rapid data processing framework replacing expensive physical survey methods with high-precision remote intelligence.</li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel track-item">
+                    <div class="track-header">
+                        <div>
+                            <h3>Bespoke Technical & Digital Engagements</h3>
+                            <div class="track-role">Freelance Systems & Technical Advisory</div>
+                        </div>
+                        <span class="track-time">2020 – Present</span>
+                    </div>
+                    <ul class="track-points">
+                        <li><strong>Firmware & OS Configuration:</strong> Hardware triage, OEM unlocking, bootloader modifications, OS repair, and custom firmware flashing.</li>
+                        <li><strong>Data & Transcriptions:</strong> High-precision technical audio-video transcriptions and digital asset preparation.</li>
+                        <li><strong>Academic Advisory:</strong> Structuring rigorous empirical methodologies and quantitative evaluations for complex technical reports.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 04 // Credentials -->
+        <section id="credentials" class="data-section">
+            <div class="section-badge">04 // CREDENTIALS</div>
+            <h2 class="section-title">Academic Pedigree</h2>
+
+            <div class="glass-panel manifesto-card" style="margin-bottom: 25px;">
+                <h3 class="manifesto-title">Philosophy: Knowledge Over Paper Metrics</h3>
+                <p>Grades and distinction scores prove discipline, punctuality, and the ability to meet external standards—nothing more. True pedigree is measured by what you carry forward: the capacity to deconstruct core principles, master complex domains, and apply foundational theory to solve real-world problems across any industry.</p>
+            </div>
+
+            <div class="edu-grid">
+                <div class="glass-panel edu-card">
+                    <div class="edu-degree">Master of Science (MSc)</div>
+                    <h3>Construction Management & BIM</h3>
+                    <div class="edu-meta">Coventry University, United Kingdom | 2023 – 2024</div>
+                    <p class="edu-distinction">Awarded Distinction (73%)</p>
+                    <ul class="edu-topics">
+                        <li>Advanced Project & Program Management</li>
+                        <li>Financial, Capital & Asset Management</li>
+                        <li>Commercial Contract Law (JCT, NEC, CDM)</li>
+                        <li>Organizational Theory & High-Performance Teams</li>
+                        <li>Thesis: Statistical modeling (IBM SPSS) on national-scale labor shortages in India.</li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel edu-card">
+                    <div class="edu-degree">Bachelor of Technology (B.Tech)</div>
+                    <h3>Civil Engineering</h3>
+                    <div class="edu-meta">KITS, India | Graduated 2022</div>
+                    <p class="edu-distinction">First Class with Distinction</p>
+                    <ul class="edu-topics">
+                        <li>Structural, Geotechnical & Environmental Engineering</li>
+                        <li>2D Engineering Drafting & 3D Spatial Modeling</li>
+                        <li>Advanced Surveying & Materials Testing Practicum</li>
+                        <li>Estimation, Costing & Construction Specifications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cert-bar">
+                <div class="glass-panel cert-card">
+                    <span class="cert-year">2026</span>
+                    <h4>NEBOSH IGC</h4>
+                    <p>Occupational Health & Safety (Phoenix)</p>
+                </div>
+                <div class="glass-panel cert-card">
+                    <span class="cert-year">2026</span>
+                    <h4>IT Support & Systems</h4>
+                    <p>Pitman / Amazon Career Choice</p>
+                </div>
+                <div class="glass-panel cert-card">
+                    <span class="cert-year">2025</span>
+                    <h4>Advanced Web Dev</h4>
+                    <p>Pitman / Amazon Career Choice</p>
+                </div>
+                <div class="glass-panel cert-card">
+                    <span class="cert-year">2024</span>
+                    <h4>Human Resources</h4>
+                    <p>Pitman / Amazon (Graduated 95%)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 05 // Engagements -->
+        <section id="engagements" class="data-section">
+            <div class="section-badge">05 // ENGAGEMENTS</div>
+            <h2 class="section-title">Consulting & Solutions</h2>
+            <div class="services-matrix">
+                <div class="glass-panel service-cell">
+                    <div class="service-id">01</div>
+                    <h3>Architectural & Spatial Engineering</h3>
+                    <p>2D detailed drafting, 3D parametric Revit modeling, structural sections, and ergonomic residential/commercial layouts.</p>
+                </div>
+                <div class="glass-panel service-cell">
+                    <div class="service-id">02</div>
+                    <h3>Industrial Operations & 5S Facility Design</h3>
+                    <p>Workstation design, warehouse flow optimization, Lean elimination of waste motion, and turnkey 5S visual management.</p>
+                </div>
+                <div class="glass-panel service-cell">
+                    <div class="service-id">03</div>
+                    <h3>Safety Tech & NEBOSH Compliance</h3>
+                    <p>Statutory site risk assessments, method statements, CDM compliance auditing, and safe systems of work frameworks.</p>
+                </div>
+                <div class="glass-panel service-cell">
+                    <div class="service-id">04</div>
+                    <h3>Data Analytics & Academic Advisory</h3>
+                    <p>Mixed-methods empirical research structuring, IBM SPSS statistical evaluations, and QGIS/ArcGIS satellite remote sensing.</p>
+                </div>
+                <div class="glass-panel service-cell">
+                    <div class="service-id">05</div>
+                    <h3>Strategic HR & Hiring Infrastructure</h3>
+                    <p>Candidate assessment models, recruitment pipelines, structured onboarding, and workforce retention frameworks.</p>
+                </div>
+                <div class="glass-panel service-cell">
+                    <div class="service-id">06</div>
+                    <h3>Full-Stack Web Development</h3>
+                    <p>High-performance single-page applications, executive web portfolios, and responsive interfaces built with clean modern code.</p>
+                </div>
+                <div class="glass-panel service-cell full-width">
+                    <div class="service-id">07</div>
+                    <h3>IT Systems & OS Remediation</h3>
+                    <p>Windows system troubleshooting, driver conflicts, Tier-1/2 hardware repair, custom bootloaders, and firmware optimization.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 06 // Connection -->
+        <section id="connection" class="data-section">
+            <div class="section-badge">06 // CONNECTION</div>
+            <h2 class="section-title">Direct Engagement</h2>
+            <div class="glass-panel contact-wrapper">
+                <div class="contact-left">
+                    <h3>Initiate Dialogue</h3>
+                    <p>Open to high-impact engineering leadership roles, operational consulting, select freelance advisory contracts, and collaborative academic/PhD research initiatives. If you value execution, candor, and relentless delivery—let’s talk.</p>
+                    <div class="contact-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Email</span>
+                            <a href="mailto:pavanbedamsetty@gmail.com" class="detail-value">pavanbedamsetty@gmail.com</a>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Direct Line</span>
+                            <a href="tel:+447767710809" class="detail-value">+44 7767 710809</a>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">United Kingdom</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mvgvaydo" method="POST" class="secure-form">
+                        <input type="text" name="name" placeholder="Full Name or Organization" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="subject" placeholder="Engagement Subject" required>
+                        <textarea name="message" rows="4" placeholder="State requirements or inquiry..." required></textarea>
+                        <button type="submit" class="submit-btn">Transmit Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 07 // Neural Agent (AI Bot Modal) -->
+    <div id="aiModal" class="ai-modal-overlay">
+        <div class="ai-modal-window">
+            <div class="ai-header">
+                <div class="ai-title">
+                    <span class="ai-status-orb"></span>
+                    <span>NEURAL AGENT // PKB v2.6</span>
+                </div>
+                <button type="button" class="ai-close-btn" onclick="closeBotModal()">&times;</button>
+            </div>
+            <div id="aiChat" class="ai-chat-body">
+                <div class="ai-bubble incoming">
+                    <strong>Neural Agent Initialized.</strong><br>
+                    Query any domain (BIM, Amazon, Degrees, 5S, Geospatial, Services) or send a direct dispatch to Pavan.
+                </div>
+            </div>
+            <div class="ai-input-wrapper">
+                <input type="text" id="aiInput" placeholder="Type query (e.g. 'What BIM tools do you know?')..." onkeydown="handleAiKey(event)">
+                <button type="button" class="ai-send-btn" onclick="executeAiQuery()">Query</button>
+            </div>
         </div>
-
-        <!-- NDVI Project -->
-        <div class="research-project">
-            <h3>Research Project: NDVI-Based Vegetation and Land-Use Analysis Using Remote Sensing Data</h3>
-            <p><strong>Coventry University | Department of Environment, Engineering, and Computing | 2023</strong></p>
-            <p><em>“Applying satellite-based NDVI analysis to evaluate vegetation health, urban expansion, and land-use dynamics for sustainable development planning.”</em></p>
-
-            <h4>Overview</h4>
-            <p>This project explored the use of Normalized Difference Vegetation Index (NDVI) to measure vegetation health and assess land-use transformation in developing regions. The study integrated satellite imagery with GIS analytics to enable informed decision-making for sustainable urban and rural development.</p>
-
-            <h4>Methodology</h4>
-            <ul>
-                <li>Quantitative remote-sensing approach using Sentinel-2 and Landsat-8 imagery (2013–2023)</li>
-                <li>Pre-processing and atmospheric correction with QGIS and ArcGIS Pro</li>
-                <li>NDVI computation across seasonal intervals to monitor vegetation health</li>
-                <li>Supervised classification of land-use categories (urban, agricultural, forest, barren)</li>
-                <li>Change detection analysis to quantify vegetation degradation or growth trends</li>
-            </ul>
-
-            <h4>Key Findings</h4>
-            <ul>
-                <li>Overall 12–15% decline in vegetation density in rapidly urbanizing areas</li>
-                <li>Agricultural land NDVI fluctuated ±0.35 seasonally, reflecting irrigation and monsoon effects</li>
-                <li>Forested zones maintained high NDVI (>0.65), showing ecological stability</li>
-                <li>GIS-based visualization dashboard created for policy and environmental reporting</li>
-            </ul>
-
-            <h4>Results & Impact</h4>
-            <ul>
-                <li>Provided scientific basis for urban planning and reforestation initiatives</li>
-                <li>Actionable insights for sustainable land management and climate-resilience policy</li>
-                <li>Demonstrated potential of remote sensing + GIS integration as scalable, low-cost environmental monitoring</li>
-            </ul>
-
-            <h4>Skills & Tools Gained</h4>
-            <ul>
-                <li>Remote Sensing, QGIS, ArcGIS Pro, ERDAS Imagine, Raster Analysis</li>
-                <li>Python (Rasterio, NumPy, Matplotlib) for geospatial data processing</li>
-                <li>Environmental data interpretation, report writing, sustainable urban planning insight</li>
-            </ul>
-        </div>
-
     </div>
-</div>
 
+    <!-- Footer -->
+    <footer class="terminal-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Pavan Kumar Bedamsetty. All systems operational.</p>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/pavankumarb7/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/bedamset" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:pavanbedamsetty@gmail.com">Direct Email</a>
+            </div>
+        </div>
+    </footer>
 
-<!-- Contact Form -->
-<div class="form-popup" id="contactForm">
-    <form action="https://formspree.io/f/mvgvaydo" method="POST" class="form-container">
-        <h2>Contact Me</h2>
-        <label for="name"><b>Name</b></label>
-        <input type="text" placeholder="Your name" name="name" required>
-        <label for="email"><b>Email</b></label>
-        <input type="email" placeholder="Your email" name="email" required>
-        <label for="subject"><b>Subject</b></label>
-        <input type="text" placeholder="Subject" name="subject" required>
-        <label for="message"><b>Message</b></label>
-        <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-        <button type="submit" class="btn">Submit</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
-</div>
-
-<!-- Footer -->
-<footer>
-    <p>&copy; 2025 Pavan Kumar Bedamsetty | <a href="mailto:pbedamsetty@gmail.com">Email</a> | <a href="https://github.com/bedamset">GitHub</a> | <a href="https://www.linkedin.com/in/pavankumarb7/">LinkedIn</a></p>
-</footer>
-
-<script src="portfolio.js"></script>
+    <script src="portfolio.js"></script>
 </body>
 </html>
-
-
